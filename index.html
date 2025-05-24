@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MyCollege One Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" tabindex="0">
+
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">MyCollege</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faculty">Faculty</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#admissions">Admissions</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home / Carousel -->
+  <section id="home" class="mt-5 pt-5">
+    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://source.unsplash.com/1200x400/?college,students" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Welcome to MyCollege</h5>
+            <p>Empowering the future with knowledge</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://source.unsplash.com/1200x400/?education,library" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center"><i class="bi bi-info-circle"></i> About Us</h2>
+      <p class="text-center">MyCollege is dedicated to academic excellence and innovation. Our mission is to nurture the leaders of tomorrow.</p>
+    </div>
+  </section>
+
+  <!-- Faculty -->
+  <section id="faculty" class="py-5">
+    <div class="container">
+      <h2 class="text-center"><i class="bi bi-people-fill"></i> Our Faculty</h2>
+      <div class="row mt-4">
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <img src="https://source.unsplash.com/200x200/?teacher,person" class="card-img-top" alt="Faculty" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Dr. Alice Smith</h5>
+              <p class="card-text">Computer Science</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <img src="https://source.unsplash.com/200x200/?professor" class="card-img-top" alt="Faculty" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Dr. John Doe</h5>
+              <p class="card-text">Economics</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center"><i class="bi bi-images"></i> Gallery</h2>
+      <div class="row mt-4">
+        <div class="col-md-4 mb-3"><img src="https://source.unsplash.com/400x300/?classroom" class="img-fluid rounded" alt="Gallery" /></div>
+        <div class="col-md-4 mb-3"><img src="https://source.unsplash.com/400x300/?students,event" class="img-fluid rounded" alt="Gallery" /></div>
+        <div class="col-md-4 mb-3"><img src="https://source.unsplash.com/400x300/?seminar" class="img-fluid rounded" alt="Gallery" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Admissions -->
+  <section id="admissions" class="py-5">
+    <div class="container">
+      <h2 class="text-center"><i class="bi bi-journal-check"></i> Admissions</h2>
+      <form class="mt-4 col-md-6 mx-auto">
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="name" required />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" required />
+        </div>
+        <div class="mb-3">
+          <label for="program" class="form-label">Program</label>
+          <select class="form-select" id="program">
+            <option>BSc Computer Science</option>
+            <option>BA Economics</option>
+            <option>BCom</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Apply Now</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 MyCollege. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
